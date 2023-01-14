@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    form {
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      padding: 20px;
+      background-color: #eeeeee;
+      border: 1px solid #555;
+    }
+    input,
+    label {
+      margin-bottom: 20px;
+    }
+
+    .label-input {
+      display: flex;
+      align-items: flex-start;
+    }
+    label {
+      width: 130px;
+      text-align: right;
+      margin-right: 8px;
+    }
+
+    body {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .input-span {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mb-input {
+      margin-bottom: 0;
+    }
+
+    .mb-span {
+      margin-bottom: 20px;
+      font-size: 10px;
+    }
+
+    .button {
+      width: 100%;
+      text-align: center;
+    }
+
+    .button button {
+      padding: 5px 55px;
+      background-color: wheat;
+      color: black;
+      border-radius: 4px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <form target="_blank" action="https://google.com">
+        <div class="label-input">
+          <label for="first">FirstName: </label>
+          <input type="text" name="name" id="first" />
+        </div>
+        <div class="label-input">
+          <label for="last">LastName: </label>
+          <input type="text" name="name" id="last" />
+        </div>
+        <div class="label-input">
+          <label for="email">Email: </label>
+          <div class="input-span">
+            <input
+              class="mb-input"
+              value=""
+              type="email"
+              name="email"
+              id="email"
+            />
+            <span class="mb-span"
+              >(Your email address will be your username)</span
+            >
+          </div>
+        </div>
+        <div class="label-input">
+          <label for="parol">Re-type Email: </label>
+          <input type="email" name="password" id="parol" />
+        </div>
+        <div class="label-input">
+          <label for="p">Password: </label>
+          <div class="input-span">
+            <input
+              class="mb-input"
+              minlength="8"
+              type="password"
+              name="p"
+              id="p"
+            />
+            <span class="mb-span"
+              >(Min. 8 characters , 1 number case-sensiive)</span
+            >
+          </div>
+        </div>
+        <div class="label-input">
+          <label for="par">Re-type Password: </label>
+          <input type="password" name="par" id="par" />
+        </div>
+        <div class="label-input">
+          <label for="uy">Address: </label>
+          <input type="" name="manzil" id="uy" />
+        </div>
+        <div class="label-input">
+          <label for="shahar">City: </label>
+          <input type="text" name="shahar" id="shahar" />
+        </div>
+
+        <div class="label-input">
+          <label for="stt">State</label>
+          <select name="stt" id="stt">
+            <option value="1">Choose a state</option>
+            <option value="2">Who a question</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="cod">Zip code </label>
+          <input style="width: 50px" type="text" name="zip" id="cod" />
+          <button style="margin-left: 8px" disabled>option</button>
+        </div>
+        <div class="label-input">
+          <label for="mm">Phone</label>
+          <div class="input-span">
+            <input class="mb-input" required style="width: 80px" type="tel" />
+            <span class="mb-span">No spaces, or dashes)</span>
+          </div>
+          <select required style="margin-left: 20px" name="tel" id="mm">
+            <option value="3">Mobile</option>
+            <option value="2">+998931366477</option>
+            <option value="1">+998990444306</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="oy">Date of Birth</label>
+          <select required style="margin-left: 0px" name="kun" id="oy">
+            <option value="1">Month</option>
+            <option value="2">January</option>
+            <option value="3">February</option>
+            <option value="3">March</option>
+            <option value="3">April</option>
+            <option value="3">May</option>
+            <option value="3">June</option>
+            <option value="3">July</option>
+            <option value="3">August</option>
+            <option value="3">September</option>
+            <option value="3">November</option>
+            <option value="3">December</option>
+          </select>
+          <select required style="margin-left: 20px" name="kun" id="oy">
+            <option value="1">Day</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+          </select>
+          <select required style="margin-left: 20px" name="yil" id="oy">
+            <option value="1">2020</option>
+            <option value="2">2021</option>
+            <option value="3">2022</option>
+            <option value="3">2023</option>
+            <option value="3">2024</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="gen">Gender</label>
+          <select required style="width: 180px" name="gen" id="gen">
+            <option value="3">Choose a gender</option>
+            <option value="2">Man</option>
+            <option value="1">Woman</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="ge">Security Question:</label>
+          <select required style="width: 200px" name="ge" id="ge">
+            <option value="1">Choose a security question</option>
+            <option value="2">What is your question</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="security">Security Answer: </label>
+          <div class="input-span">
+            <input class="mb-input" type="text" name="security" id="security" />
+            <span class="mb-span">(Not case, sentivities)</span>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="container2">
+      <form target="_blank" action="https://google.com">
+        <h3>Personal Information</h3>
+        <div class="label-input">
+          <label for="first">FirstName: </label>
+          <input type="text" name="name" id="first" />
+        </div>
+        <div class="label-input">
+          <label for="last">LastName: </label>
+          <input type="text" name="name" id="last" />
+        </div>
+        <div class="label-input">
+          <label for="oy">Date of Birth</label>
+          <select required style="margin-left: 0px" name="kun" id="oy">
+            <option value="1">Month</option>
+            <option value="2">January</option>
+            <option value="3">February</option>
+            <option value="3">March</option>
+            <option value="3">April</option>
+            <option value="3">May</option>
+            <option value="3">June</option>
+            <option value="3">July</option>
+            <option value="3">August</option>
+            <option value="3">September</option>
+            <option value="3">November</option>
+            <option value="3">December</option>
+          </select>
+          <select required style="margin-left: 20px" name="kun" id="oy">
+            <option value="1">Day</option>
+            <option value="2">1</option>
+            <option value="3">2</option>
+            <option value="4">3</option>
+            <option value="5">4</option>
+            <option value="6">5</option>
+            <option value="7">6</option>
+          </select>
+          <select required style="margin-left: 20px" name="yil" id="oy">
+            <option value="1">2020</option>
+            <option value="2">2021</option>
+            <option value="3">2022</option>
+            <option value="3">2023</option>
+            <option value="3">2024</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="gen">Gender</label>
+          <select required style="width: 180px" name="gen" id="gen">
+            <option value="3">Choose a gender</option>
+            <option value="2">Man</option>
+            <option value="1">Woman</option>
+          </select>
+        </div>
+        <h3>Account Information</h3>
+        <div class="label-input">
+          <label for="email">Email: </label>
+          <div class="input-span">
+            <input
+              class="mb-input"
+              value=""
+              type="email"
+              name="email"
+              id="email"
+            />
+            <span class="mb-span"
+              >(Your email address will be your username)</span
+            >
+          </div>
+        </div>
+        <div class="label-input">
+          <label for="parol">Re-type Email: </label>
+          <input type="email" name="password" id="parol" />
+        </div>
+        <div class="label-input">
+          <label for="p">Password: </label>
+          <div class="input-span">
+            <input
+              class="mb-input"
+              minlength="8"
+              type="password"
+              name="p"
+              id="p"
+            />
+            <span class="mb-span"
+              >(Min. 8 characters , 1 number case-sensiive)</span
+            >
+          </div>
+        </div>
+        <div class="label-input">
+          <label for="par">Re-type Password: </label>
+          <input type="password" name="par" id="par" />
+        </div>
+
+        <div class="label-input">
+          <label for="ge">Security Question:</label>
+          <select required style="width: 200px" name="ge" id="ge">
+            <option value="1">Choose a security question</option>
+            <option value="2">What is your question</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="security">Security Answer: </label>
+          <div class="input-span">
+            <input class="mb-input" type="text" name="security" id="security" />
+            <span class="mb-span">(Not case, sentivities)</span>
+          </div>
+        </div>
+        <h3>Contact Information</h3>
+        <div class="label-input">
+          <label for="uy">Address: </label>
+          <input type="" name="manzil" id="uy" />
+        </div>
+        <div class="label-input">
+          <label for="shahar">City: </label>
+          <input type="text" name="shahar" id="shahar" />
+        </div>
+
+        <div class="label-input">
+          <label for="stt">State</label>
+          <select name="stt" id="stt">
+            <option value="1">Choose a state</option>
+            <option value="2">Who a question</option>
+          </select>
+        </div>
+        <div class="label-input">
+          <label for="cod">Zip code </label>
+          <input style="width: 50px" type="text" name="zip" id="cod" />
+          <button style="margin-left: 8px" disabled>option</button>
+        </div>
+        <div class="label-input">
+          <label for="mm">Phone</label>
+          <div class="input-span">
+            <input class="mb-input" required style="width: 80px" type="tel" />
+            <span class="mb-span">No spaces, or dashes)</span>
+          </div>
+          <select required style="margin-left: 20px" name="tel" id="mm">
+            <option value="3">Mobile</option>
+            <option value="2">+998931366477</option>
+            <option value="1">+998990444306</option>
+          </select>
+        </div>
+        <div class="button">
+          <button type="submit">Submit</button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
